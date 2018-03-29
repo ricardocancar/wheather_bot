@@ -10,6 +10,6 @@
 
   -[librerias de mongo](https://docs.mongodb.com/manual/applications/drivers/)
 
-###Guia de scrapping web en ingles.
+### Guia de scrapping web en ingles.
 
   -[scrapping](https://www.dataquest.io/blog/web-scraping-tutorial-python/)
