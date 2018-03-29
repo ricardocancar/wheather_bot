@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 ##obtiene el codigo html
 page = requests.get("http://dataquestio.github.io/web-scraping-pages/simple.html")
-## recibe el status codigo
+## si el código recibido es 200, la pagina fue cargada correctamente.  
 # print(page.status_code)
 
 soup = BeautifulSoup(page.content, "html.parser")
@@ -10,7 +10,7 @@ soup = BeautifulSoup(page.content, "html.parser")
 
 # print(list(soup.children))
 
-
+#(muesta los diferentes objetos que conforman el metodo soup)
 # print([type(item) for item in list(soup.children)])
 
 

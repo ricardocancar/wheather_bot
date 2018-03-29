@@ -1,0 +1,9 @@
+2018-03-28 15:41:28,644 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/rcancar/.local/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/rcancar/.local/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 171, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/rcancar/PycharmProjects/Clases28M/pelicula.bot.py", line 8, in inicio
+    bot.sendMessage(chat_id=update.message.chat.id, text="hola {}".format(update.message.chat.firstname))
+AttributeError: 'Chat' object has no attribute 'firstname'
